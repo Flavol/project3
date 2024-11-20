@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif; /* Выбрали стандартный шрифт */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Адаптивная сетка */
+  grid-gap: 20px;
+  padding: 20px;
+  color: #333; /* Основной цвет текста */
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center; /* Текст по центру по умолчанию */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  color: #222; /* Более темный заголовок */
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff; /* Голубой цвет кнопки */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.button:hover {
+  background-color: #0062cc; /* Темнее при наведении */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Медиа запросы для разных размеров экранов */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  h1 {
+      font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+  }
+  h1 {
+      font-size: 1.8em;
+  }
+  p {
+      font-size: 1em;
+  }
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+textarea {
+min-height: 100px;
+}
+
